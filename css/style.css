@@ -37,6 +37,7 @@ nav {
 #main {
   padding: 50px 0;
   text-align: center;
+  width: 100%;
 }
 
 .main-image {
@@ -98,6 +99,12 @@ nav {
 #contact {
   padding: 30px 0px;
   margin: 80px 0px;
+}
+
+.fa-brands,
+.fa-solid {
+  padding: 3px;
+  color: #fff;
 }
 
 #contact .container {
