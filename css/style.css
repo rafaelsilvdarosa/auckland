@@ -9,9 +9,73 @@
 }
 
 body {
-  background-color: #0f0f0f;
   color: #fff;
+  background-color: #0f0f0f;
+  transition: 0.5s;
+}
+
+.container {
   font-size: 20px;
+}
+
+.paragraph {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.trilho {
+  background-color: #333;
+  width: 70px;
+  height: 30px;
+  margin-left: 50px;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.trilho .indicador {
+  width: 30px;
+  height: 30px;
+  background-color: #0f0f0f;
+  border-radius: 50%;
+  transform: scale(0.9);
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+}
+
+.trilho.dark {
+  background-color: #c3c3c3;
+}
+
+.trilho.dark .indicador {
+  left: 40px;
+  background-color: #fff;
+}
+
+body.dark {
+  background-color: #e4e4e4;
+  color: #0f0f0f;
+}
+
+body.dark .fa-brands {
+  color: #0f0f0f;
+}
+
+body.dark .fa-solid {
+  color: #0f0f0f;
+}
+
+body.dark p {
+  color: #0f0f0f;
+}
+
+body.dark #contact .btn-contact {
+  background-color: #e4e4e4;
+  color: #0f0f0f;
+  border-color: #c3c3c3;
 }
 
 header {
@@ -72,15 +136,6 @@ nav {
   margin-bottom: 20px;
 }
 
-#main .btn {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 10px;
-  font-size: 20px;
-}
-
 #feedback {
   padding: 20px 0;
 }
@@ -115,13 +170,14 @@ nav {
 }
 
 #contact .btn-contact {
-  background: #333;
-  color: #fff;
+  font-size: 20px;
+  background-color: #333;
+  color: #e4e4e4;
   width: 200px;
   height: 40px;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 15px;
-  font-size: 20px;
+  border-radius: 20px;
 }
 
 footer {
